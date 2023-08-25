@@ -4,16 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Compass</title>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <section class="wrapper">
+        <div class="scene scene-1">
+            <img src="assets/one.svg" alt="Man with superhero cape">
+            <h1>Welcome</h1>
+            <h3>Thanks for participating in the poll</h3>
+            <button class="scene__button js-btn-next">
+                <span class="scene__button__initial-label">Let's go</span>
+                <span class="scene__button__hover-label">Just Go Ahead</span>
+            </button>
+        </div>
+        <div class="scene scene-2 hide">
+            <img src="assets/two.svg" alt="Thoughtful man in office">
+            <h2>Necessities of working in
+                financial markets
+            </h2>
+            <p>This research is to find the reasons for the failure of people in financial markets. The results of this
+                survey will be emailed to you along with the analysis of our experienced experts.</p>
+            <div class="scene-2__btn-inner">
+                <button class="scene__button js-btn-previous">
+                    <span>Back to Home</span>
+                </button>
+                <button class="scene__button js-btn-next">
+                    <span>Fill out the form</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="js/quiz.js"></script>
 </body>
 
 </html>
