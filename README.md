@@ -24,3 +24,9 @@ The project was delivered on August 28, 2023. Any future updates will be made af
 ## Design without Figma
 To check out the design of the project, visit the link in Figma:
 [Design in Figma](https://www.figma.com/file/lb8YnlygMTI3RiAY8KKDCB/survey-form---desktop-type-(Community)?node-id=0%3A1&mode=dev)
+
+## How to run the project
+1. Download the project files or clone the repository.
+2. Open the `index.html` file in your browser.
+
+That's all that's needed to run the project.
