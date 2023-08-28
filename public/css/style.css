@@ -215,6 +215,10 @@ h4 {
     width: 44px;
     height: 37px;
     pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .custom-checkbox {
@@ -244,7 +248,7 @@ h4 {
 }
 
 .custom-checkbox input:checked~.checkmark {
-    background-color: rgba(29, 77, 43, 0.666);
+    background-color: #3EB25E;
 }
 
 .scene .scene__button--skip {
@@ -265,4 +269,10 @@ h4 {
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.25);
 
+}
+
+.scene-5 img,
+.scene-6 img {
+    width: 88%;
+    margin-bottom: 25px;
 }
