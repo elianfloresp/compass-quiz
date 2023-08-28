@@ -23,6 +23,7 @@
 h1,
 h2,
 h3,
+h4,
 p {
     color: #000;
     text-align: center;
@@ -47,6 +48,11 @@ h2 {
 
 h3 {
     font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    text-align: left;
 }
 
 .scene__button {
@@ -109,7 +115,9 @@ h3 {
     margin-bottom: 40px;
 }
 
-.scene-2 img {
+.scene-2 img,
+.scene-3 img,
+.scene-4 img {
     width: 100%;
     height: auto;
     margin-bottom: 25px;
@@ -129,12 +137,113 @@ h3 {
     margin-top: 22px;
 }
 
-.scene-2__btn-inner .scene__button {
+.scene-2 .scene__button {
     width: 142px;
     min-height: 26px;
     margin: 0 9px;
 }
 
-.scene-2__btn-inner .scene__button span {
+.scene-2 .scene__button span,
+.scene-3 .scene__button span,
+.scene-4 .scene__button span {
     font-size: 15px;
+}
+
+.scene-3__btn-inner,
+.scene-4__btn-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+    width: 75%;
+    margin: 24px auto 0;
+}
+
+.scene-3 .scene__button,
+.scene-4__btn-inner .scene__button {
+    width: 142px;
+    min-height: 26px;
+}
+
+.scene-3 h4,
+.scene-4 h4 {
+    width: 75%;
+    margin: 0 auto 10px;
+}
+
+.scene-3 select,
+.scene-4 select {
+    width: 100%;
+    height: 33px;
+    padding: 6px 1px 4px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-appearance: none; /* Remove default arrow for Chrome/Safari */
+    -moz-appearance: none; /* Remove default arrow for Firefox */
+    appearance: none; /* Remove default arrow for newer browsers */
+    outline: none; 
+}
+
+.scene-3 select option,
+.scene-3 input,
+.scene-4 select option,
+.scene-4 input {
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.scene-3__select-wrapper,
+.scene-4__select-wrapper {
+    position: relative;
+    margin: 0 auto 11px;
+    width: 75%;
+}
+
+.scene-3 .select-arrow,
+.scene-4 .select-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 37px;
+    pointer-events: none;
+}
+
+.custom-checkbox {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+    width: 70%;
+    margin: 2px auto;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(62, 178, 94, 0.30);
+    border-radius: 50%;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: rgba(29, 77, 43, 0.666);
+}
+
+.scene .scene__button--skip {
+    width: 75%;
+    margin: 10px auto 0;
 }

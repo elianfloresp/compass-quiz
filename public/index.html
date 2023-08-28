@@ -15,7 +15,7 @@
 
 <body>
     <section class="wrapper">
-        <div class="scene scene-1">
+        <div class="scene scene-1 hide">
             <img src="assets/one.svg" alt="Man with superhero cape">
             <h1>Welcome</h1>
             <h3>Thanks for participating in the poll</h3>
@@ -39,6 +39,120 @@
                     <span>Fill out the form</span>
                 </button>
             </div>
+        </div>
+        <div class="scene scene-3 hide">
+            <img src="assets/tree.svg" alt="man working in the office">
+            <h4>What is the status of your account?</h4>
+
+            <div class="scene-3__select-wrapper">
+                <select id="scene-3-select-option" name="accountOptions">
+                    <option value="I have not created an account yet.">I have not created an account yet.</option>
+                    <option value="I created my account but haven't made any operations yet">I created my account but
+                        haven't made any operations yet</option>
+                    <option value="My account is currently active and operating">My account is currently active and
+                        operating</option>
+                </select>
+                <div class="select-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgba(62, 178, 94, 0.30)">
+                        <path fill-rule="evenodd"
+                            d="M6.293 7.293a1 1 0 011.414 0L10 9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+
+            <h4>In which financial markets do you operate?</h4>
+            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="stock market"> <span
+                    class="checkmark"></span>stock market</label>
+            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="foreign exchange">
+                <span class="checkmark"></span>foreign exchange</label>
+            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="commodity"><span
+                    class="checkmark"></span>commodity</label>
+            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="bond market"><span
+                    class="checkmark"></span>bond market</label>
+            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="cryptocurrency market">
+                <span class="checkmark"></span>cryptocurrency
+                market</label>
+
+
+            <div class="scene-3__btn-inner">
+                <button class="scene__button js-btn-previous">
+                    <span>Back</span>
+                </button>
+                <button class="scene__button js-btn-next">
+                    <span>Next</span>
+                </button>
+            </div>
+            <button class="scene__button scene__button--skip">
+                <span>Skip</span>
+            </button>
+        </div>
+        <div class="scene scene-4 hide">
+            <img src="assets/tree.svg" alt="man working in the office">
+            <h4>How do you decide to invest?</h4>
+
+            <div class="scene-3__select-wrapper">
+                <select id="scene-3-select-option" name="accountOptions">
+                    <option value="I have not invested yet.
+                    ">I have not invested yet.
+                    </option>
+                    <option value="I haven't made any investments so far.">I haven't made any investments so far.
+                    </option>
+                    <option value="At this point, I still haven't put any money into investments.">At this point, I
+                        still haven't put any money into investments.</option>
+                </select>
+                <div class="select-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgba(62, 178, 94, 0.30)">
+                        <path fill-rule="evenodd"
+                            d="M6.293 7.293a1 1 0 011.414 0L10 9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+
+            <h4>What resources have you used or are you using for your training?</h4>
+            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="Books and articles">
+                <span class="checkmark"></span>Books and articles</label>
+            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
+                    value=" YouTube tutorial videos">
+                <span class="checkmark"></span> YouTube tutorial videos</label>
+            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
+                    value="online or face to face courses"><span class="checkmark"></span>online or face to face
+                courses</label>
+            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
+                    value="experience with little investment"><span class="checkmark"></span>experience with little
+                investment</label>
+
+
+            <div class="scene-4__btn-inner">
+                <button class="scene__button js-btn-previous">
+                    <span>Back</span>
+                </button>
+                <button class="scene__button js-btn-next">
+                    <span>Next</span>
+                </button>
+            </div>
+            <button class="scene__button scene__button--skip">
+                <span>Skip</span>
+            </button>
+        </div>
+        <div class="scene scene-5 ">
+            <img src="assets/for.svg" alt="man working in the office">
+            <h4>How do you decide to invest?</h4>
+
+
+
+            <div class="scene-4__btn-inner">
+                <button class="scene__button js-btn-previous">
+                    <span>Back</span>
+                </button>
+                <button class="scene__button js-btn-next">
+                    <span>Next</span>
+                </button>
+            </div>
+            <button class="scene__button scene__button--skip">
+                <span>Skip</span>
+            </button>
         </div>
     </section>
     <script src="js/quiz.js"></script>
