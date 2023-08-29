@@ -62,7 +62,7 @@ h4 {
     border-radius: 35px;
     border: 0;
     width: 199px;
-    min-height: 36px;
+    min-height: 26px;
     color: #FFF;
     background: #3EB25E;
     cursor: pointer;
@@ -73,7 +73,7 @@ h4 {
 .scene__button span {
     text-align: center;
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -151,23 +151,26 @@ h4 {
 }
 
 .scene-3__btn-inner,
-.scene-4__btn-inner {
+.scene-4__btn-inner,
+.scene-5__btn-inner {
     display: flex;
     justify-content: space-between;
     margin-top: 22px;
-    width: 75%;
+    width: 100%;
     margin: 24px auto 0;
 }
 
+
 .scene-3 .scene__button,
-.scene-4__btn-inner .scene__button {
+.scene-4__btn-inner .scene__button,
+.scene-5__btn-inner .scene__button {
     width: 142px;
     min-height: 26px;
 }
 
 .scene-3 h4,
 .scene-4 h4 {
-    width: 75%;
+    width: 100%;
     margin: 0 auto 10px;
 }
 
@@ -175,7 +178,8 @@ h4 {
 .scene-4 select {
     width: 100%;
     height: 33px;
-    padding: 6px 1px 4px 20px;
+    padding: 6px 10px 4px 40px;
+    overflow: hidden;
     box-sizing: border-box;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.25);
@@ -195,7 +199,7 @@ h4 {
     font-style: normal;
     font-weight: 400;
     color: #000;
-    text-align: center;
+    text-align: left;
     font-family: Roboto;
     font-size: 16px;
 }
@@ -204,7 +208,12 @@ h4 {
 .scene-4__select-wrapper {
     position: relative;
     margin: 0 auto 11px;
-    width: 75%;
+    width: 100%;
+}
+
+.scene__button.disabled {
+    pointer-events: none;
+    background-color: darkgray;
 }
 
 .scene-3 .select-arrow,
@@ -218,17 +227,25 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.scene-3 .scene__body {
+    width: 90%;
 }
 
 .custom-checkbox {
     position: relative;
     padding-left: 20px;
     cursor: pointer;
-    display: block;
     margin-bottom: 10px;
-    width: 70%;
+    width: 100%;
     margin: 2px auto;
+    display: flex;
+    align-items: center;
+}
+
+.scene-4 .checkmark {
+    border-radius: 2px;
 }
 
 .custom-checkbox input {
@@ -306,13 +323,109 @@ form {
     display: inline-block;
 }
 
-#scene-3-select-option {
+.scene-3__select-option,
+.scene-4__select-option {
     color: #000;
-    text-align: center;
+    text-align: left;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
+}
+
+.scene__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.scene-6 form input {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    height: 33px;
+}
+
+.input-form, .input-date,
+label {
+    padding-left: 11px;
+
+}
+
+.scene-6 .input-date{
+    width: 45%;
+
+}
+
+.scene-6 .scene__button--skip,
+.scene-6 .scene__button {
+    width: 100%;
+}
+
+.scene-6 .scene__body {
+    width: 80%;
+    align-items: flex-start;
+}
+
+.scene-6 label {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.scene-6 .js-btn-previous {
+    margin-bottom: 10px;
+}
+
+.scene-6 input {
+    margin-top: 7px;
+}
+
+@media screen and (min-width: 768px) {
+    .scene-3__btn-inner, .scene-4__btn-inner, .scene-5__btn-inner,
+    .scene-3 .scene__button--skip, .scene-4 .scene__button--skip {
+        width: 300px;
+        align-self: flex-start;
+        margin: 24px 0 0;
+    }
+
+    .scene-5__btn-inner {
+        align-self: center;
+    }
+
+    .scene-5 .scene__button--skip {
+        width: 300px;
+        align-self: center;
+    }
+    
+    .scene-6 .scene__button {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .scene {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .scene .scene__body {
+        width: 37%;
+    }
+    
+    .scene-5 h4,
+    .scene-5 #loss {
+        width: 100%;
+    }
+
+    .scene img {
+        width: 34%;
+        margin-right: 80px;
+    }
 }

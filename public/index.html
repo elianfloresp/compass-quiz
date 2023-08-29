@@ -17,176 +17,195 @@
     <section class="wrapper">
         <div class="scene scene-1">
             <img src="assets/one.svg" alt="Man with superhero cape">
-            <h1>Welcome</h1>
-            <h3>Thanks for participating in the poll</h3>
-            <button class="scene__button js-btn-next">
-                <span class="scene__button__initial-label">Let's go</span>
-                <span class="scene__button__hover-label">Just Go Ahead</span>
-            </button>
+            <div class="scene__body">
+                <h1>Welcome</h1>
+                <h3>Thanks for participating in the poll</h3>
+                <button class="scene__button js-btn-next">
+                    <span class="scene__button__initial-label">Let's go</span>
+                    <span class="scene__button__hover-label">Just Go Ahead</span>
+                </button>
+            </div>
         </div>
         <div class="scene scene-2 hide">
             <img src="assets/two.svg" alt="Thoughtful man in office">
-            <h2>Necessities of working in
-                financial markets
-            </h2>
-            <p>This research is to find the reasons for the failure of people in financial markets. The results of this
-                survey will be emailed to you along with the analysis of our experienced experts.</p>
-            <div class="scene-2__btn-inner">
-                <button class="scene__button js-btn-previous">
-                    <span>Back to Home</span>
-                </button>
-                <button class="scene__button js-btn-next">
-                    <span>Fill out the form</span>
-                </button>
+            <div class="scene__body">
+                <h2>Necessities of working in
+                    financial markets
+                </h2>
+                <p>This research is to find the reasons for the failure of people in financial markets. The results of
+                    this
+                    survey will be emailed to you along with the analysis of our experienced experts.</p>
+                <div class="scene-2__btn-inner">
+                    <button class="scene__button js-btn-previous">
+                        <span>Back to Home</span>
+                    </button>
+                    <button class="scene__button js-btn-next">
+                        <span>Fill out the form</span>
+                    </button>
+                </div>
             </div>
+
         </div>
         <div class="scene scene-3 hide">
             <img src="assets/tree.svg" alt="man working in the office">
-            <h4>What is the status of your account?</h4>
+            <div class="scene__body">
+                <h4>What is the status of your account?</h4>
 
-            <div class="scene-3__select-wrapper">
-                <select id="scene-3-select-option" name="accountOptions">
-                    <option value="I have not created an account yet.">I have not created an account yet.</option>
-                    <option value="I created my account but haven't made any operations yet">I created my account but
-                        haven't made any operations yet</option>
-                    <option value="My account is currently active and operating">My account is currently active and
-                        operating</option>
-                </select>
-                <div class="select-arrow">
-                    <svg width="15" height="12" viewBox="0 0 18 13" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Group_99">
-                            <g id="Group_94">
-                                <path id="Vector_1"
-                                    d="M15.8851 0H2.11493C0.446065 0 -0.48877 1.92338 0.542289 3.23564L7.42736 11.9985C8.22812 13.0176 9.77188 13.0176 10.5726 11.9985L17.4577 3.23564C18.4888 1.92339 17.5539 0 15.8851 0Z"
-                                    fill="rgba(62, 178, 94, 0.30)" />
+                <div class="scene-3__select-wrapper">
+                    <select class="scene-3__select-option" name="accountOptions">
+                        <option value="I have not created an account yet.">I have not created an account yet.</option>
+                        <option value="I created my account but haven't made any operations yet">I created my account
+                            but
+                            haven't made any operations yet</option>
+                        <option value="My account is currently active and operating">My account is currently active and
+                            operating</option>
+                    </select>
+                    <div class="select-arrow">
+                        <svg width="15" height="12" viewBox="0 0 18 13" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group_99">
+                                <g id="Group_94">
+                                    <path id="Vector_1"
+                                        d="M15.8851 0H2.11493C0.446065 0 -0.48877 1.92338 0.542289 3.23564L7.42736 11.9985C8.22812 13.0176 9.77188 13.0176 10.5726 11.9985L17.4577 3.23564C18.4888 1.92339 17.5539 0 15.8851 0Z"
+                                        fill="rgba(62, 178, 94, 0.30)" />
+                                </g>
                             </g>
-                        </g>
-                    </svg>
+                        </svg>
+                    </div>
                 </div>
-            </div>
 
-            <h4>In which financial markets do you operate?</h4>
-            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="stock market"> <span
-                    class="checkmark"></span>stock market</label>
-            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="foreign exchange">
-                <span class="checkmark"></span>foreign exchange</label>
-            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="commodity"><span
-                    class="checkmark"></span>commodity</label>
-            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="bond market"><span
-                    class="checkmark"></span>bond market</label>
-            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="cryptocurrency market">
-                <span class="checkmark"></span>cryptocurrency
-                market</label>
+                <h4>In which financial markets do you operate?</h4>
+                   <label class="custom-checkbox">
+                        <input type="radio" name="market-type" class="checkbox-option" value="stock market">
+                        <span  class="checkmark"></span>stock market
+                      </label>
+                      <label class="custom-checkbox">
+                        <input type="radio" name="market-type" class="checkbox-option" value="foreign exchange">
+                        <span  class="checkmark"></span>foreign exchange
+                      </label>
+                      <label class="custom-checkbox">
+                        <input type="radio" name="market-type" class="checkbox-option" value="commodity">
+                        <span  class="checkmark"></span>commodity
+                      </label>
+                      <label class="custom-checkbox">
+                        <input type="radio" name="market-type" class="checkbox-option" value="bond market">
+                        <span  class="checkmark"></span>bond market
+                      </label>
+                      <label class="custom-checkbox">
+                        <input type="radio" name="market-type" class="checkbox-option" value="cryptocurrency market">
+                        <span  class="checkmark"></span>cryptocurrency market
+                      </label>
 
 
-            <div class="scene-3__btn-inner">
-                <button class="scene__button js-btn-previous">
-                    <span>Back</span>
+                <div class="scene-3__btn-inner">
+                    <button class="scene__button js-btn-previous">
+                        <span>Back</span>
+                    </button>
+                    <button class="scene__button js-btn-next disabled">
+                        <span>Next</span>
+                    </button>
+                </div>
+                <button class="scene__button scene__button--skip js-btn-skip">
+                    <span>Skip</span>
                 </button>
-                <button class="scene__button js-btn-next">
-                    <span>Next</span>
-                </button>
             </div>
-            <button class="scene__button scene__button--skip">
-                <span>Skip</span>
-            </button>
         </div>
         <div class="scene scene-4 hide">
             <img src="assets/tree.svg" alt="man working in the office">
-            <h4>How do you decide to invest?</h4>
+            <div class="scene__body">
+                <h4>How do you decide to invest?</h4>
 
-            <div class="scene-3__select-wrapper">
-                <select id="scene-3-select-option" name="accountOptions">
-                    <option value="I have not invested yet.
-                    ">I have not invested yet.
-                    </option>
-                    <option value="I haven't made any investments so far.">I haven't made any investments so far.
-                    </option>
-                    <option value="At this point, I still haven't put any money into investments.">At this point, I
-                        still haven't put any money into investments.</option>
-                </select>
-                <div class="select-arrow">
-                    <svg width="15" height="12" viewBox="0 0 18 13" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Group_99">
-                            <g id="Group_94">
-                                <path id="Vector_1"
-                                    d="M15.8851 0H2.11493C0.446065 0 -0.48877 1.92338 0.542289 3.23564L7.42736 11.9985C8.22812 13.0176 9.77188 13.0176 10.5726 11.9985L17.4577 3.23564C18.4888 1.92339 17.5539 0 15.8851 0Z"
-                                    fill="rgba(62, 178, 94, 0.30)" />
+                <div class="scene-4__select-wrapper">
+                    <select class="scene-4__select-option" name="accountOptions">
+                        <option value="I have not invested yet.
+                        ">I have not invested yet.
+                        </option>
+                        <option value="I haven't made any investments so far.">I haven't made any investments so far.
+                        </option>
+                        <option value="At this point, I still haven't put any money into investments.">At this point, I
+                            still haven't put any money into investments.</option>
+                    </select>
+                    <div class="select-arrow">
+                        <svg width="15" height="12" viewBox="0 0 18 13" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group_99">
+                                <g id="Group_94">
+                                    <path id="Vector_1"
+                                        d="M15.8851 0H2.11493C0.446065 0 -0.48877 1.92338 0.542289 3.23564L7.42736 11.9985C8.22812 13.0176 9.77188 13.0176 10.5726 11.9985L17.4577 3.23564C18.4888 1.92339 17.5539 0 15.8851 0Z"
+                                        fill="rgba(62, 178, 94, 0.30)" />
+                                </g>
                             </g>
-                        </g>
-                    </svg>
+                        </svg>
+                    </div>
                 </div>
-            </div>
 
-            <h4>What resources have you used or are you using for your training?</h4>
-            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option" value="Books and articles">
-                <span class="checkmark"></span>Books and articles</label>
-            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
-                    value=" YouTube tutorial videos">
-                <span class="checkmark"></span> YouTube tutorial videos</label>
-            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
-                    value="online or face to face courses"><span class="checkmark"></span>online or face to face
-                courses</label>
-            <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
-                    value="experience with little investment"><span class="checkmark"></span>experience with little
-                investment</label>
+                <h4>What resources have you used or are you using for your training?</h4>
+                <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
+                        value="Books and articles">
+                    <span class="checkmark"></span>Books and articles</label>
+                <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
+                        value=" YouTube tutorial videos">
+                    <span class="checkmark"></span> YouTube tutorial videos</label>
+                <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
+                        value="online or face to face courses"><span class="checkmark"></span>online or face to face
+                    courses</label>
+                <label class="custom-checkbox"><input type="checkbox" class="checkbox-option"
+                        value="experience with little investment"><span class="checkmark"></span>experience with little
+                    investment</label>
 
 
-            <div class="scene-4__btn-inner">
-                <button class="scene__button js-btn-previous">
-                    <span>Back</span>
+                <div class="scene-4__btn-inner">
+                    <button class="scene__button js-btn-previous">
+                        <span>Back</span>
+                    </button>
+                    <button class="scene__button js-btn-next disabled">
+                        <span>Next</span>
+                    </button>
+                </div>
+                <button class="scene__button scene__button--skip js-btn-skip">
+                    <span>Skip</span>
                 </button>
-                <button class="scene__button js-btn-next">
-                    <span>Next</span>
-                </button>
             </div>
-            <button class="scene__button scene__button--skip">
-                <span>Skip</span>
-            </button>
         </div>
         <div class="scene scene-5 hide">
             <img src="assets/for.svg" alt="man making okay sign">
-            <h4>If you or someone close to you has already made a loss on the investment, write down the details</h4>
-
-            <textarea id="loss" rows="4" cols="50" placeholder=""></textarea>
-            <span id="counter">0/130 characters</span>
-
-
-
-            <div class="scene-4__btn-inner">
+            <div class="scene__body">
+                <h4>If you or someone close to you has already made a loss on the investment, write down the details
+                </h4>
+                <textarea id="loss" rows="4" cols="50" placeholder=""></textarea>
+                <span id="counter">0/130 characters</span>
+                <div class="scene-5__btn-inner">
+                    <button class="scene__button js-btn-previous">
+                        <span>Back</span>
+                    </button>
+                    <button class="scene__button js-btn-next disabled">
+                        <span>Next</span>
+                    </button>
+                </div>
+                <button class="scene__button scene__button--skip js-btn-skip">
+                    <span>Skip</span>
+                </button>
+            </div>
+        </div>
+        <div class="scene scene-6 hide">
+            <img src="assets/five.svg" alt="happy man">
+            <div class="scene__body">
+                <form>
+                    <label for="full-name">Full name:</label><br>
+                    <input type="text" class="input-form" id="full-name" name="full-name" placeholder="Nasser Toghiri" required><br><br>
+        
+                    <label for="email">Email:</label><br>
+                    <input type="email" class="input-form"  id="email" name="email" placeholder="N.Toghiri@Gmail.com" required><br><br>
+        
+                    <label for="age">Age:</label><br>
+                    <input type="text" class="input-date"  id="age" name="age" placeholder="-- --" required><br><br>
+                </form>
+        
                 <button class="scene__button js-btn-previous">
                     <span>Back</span>
                 </button>
-                <button class="scene__button js-btn-next">
-                    <span>Next</span>
+                <button class="scene__button js-submit disabled" type="submit">
+                    <span>Submit</span>
                 </button>
             </div>
-            <button class="scene__button scene__button--skip">
-                <span>Skip</span>
-            </button>
-        </div>
-        <div class="scene scene-6 hide">
-            <img src="assets/five.svg" alt="happe man">
-
-            <form>
-                <label for="full-name">Full name:</label><br>
-                <input type="text" id="input-form" name="full-name" placeholder="Nasser Toghiri"><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="input-form" name="email" placeholder="N.Toghiri@Gmail.com"><br><br>
-
-                <label for="age">Age:</label><br>
-                <input type="text" id="input-form" name="age" placeholder="- -"><br><br>
-
-
-            </form>
-
-            <button class="scene__button scene__button--skip">
-                <span>Back</span>
-            </button>
-            <button class="scene__button scene__button--skip">
-                <span>Submit</span>
-            </button>
         </div>
     </section>
     <script src="js/quiz.js"></script>
